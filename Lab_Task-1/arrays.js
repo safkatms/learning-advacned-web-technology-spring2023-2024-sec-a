@@ -41,3 +41,10 @@ let doubleNumbers = numbers.map(function(number){
 });
 
 console.log(doubleNumbers);
+
+const num = [1,2,3,4,5,6];
+const evenNumbers = num.filter(function(n){
+    return n % 2 === 0;
+});
+console.log(evenNumbers);
+
