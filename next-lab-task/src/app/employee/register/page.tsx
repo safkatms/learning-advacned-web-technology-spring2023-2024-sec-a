@@ -1,12 +1,13 @@
 'use client'
-import {useRouter } from "next/navigation"
+import { useRouter } from "next/navigation";
 
-const RegistrationPage = () => {
-  const router = useRouter();
+const EmployeeRegistrationPage = () => {
+    const router= useRouter();
 
-  const handleLogin = () => {
-    router.push('/login');
-  };
+    const backDashboard =()=>{
+        alert("Employee registed successful.")
+        router.push("/dashboard");
+    }
 
   return (
     <div className="registration-container">
@@ -35,9 +36,7 @@ const RegistrationPage = () => {
           </tr>
           <tr>
             <td colSpan={2}>
-              <button type="submit" onClick={handleLogin}>Register</button><hr />
-              <h5>Already have an account?</h5>
-              <button type="button" onClick={handleLogin}>Login</button>
+              <button type="submit" onClick={backDashboard}>Add</button><hr />
             </td>
           </tr>
         </tbody>
@@ -46,4 +45,4 @@ const RegistrationPage = () => {
   );
 };
 
-export default RegistrationPage;
+export default EmployeeRegistrationPage;
