@@ -7,7 +7,7 @@ import { UpdateUserDto } from './dto/update-user.dto';
 export class UserController {
   constructor(private readonly userService: UserService) {}
 
-  @Post('register')
+  @Post('/register')
   async registerUser(@Body(ValidationPipe) createUserDto: CreateUserDto): Promise<any> {
     return this.userService.registerUser(createUserDto);
   }
