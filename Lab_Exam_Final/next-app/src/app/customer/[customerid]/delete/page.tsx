@@ -1,12 +1,11 @@
 "use client"
 import { useRouter } from "next/navigation";
 
-const ProductDeletePage = () => {
+const CustomerDeletePage = () => {
     const router = useRouter();
 
     const handleDeletion = () => {
-        // Add your logic to delete the product
-        alert('Product deletion complete.');
+        alert('Customer deletion complete.');
         router.push('/dashboard');
     };
 
@@ -17,12 +16,12 @@ const ProductDeletePage = () => {
 
     return (
         <div>
-            <h1>Delete Product</h1>
-            <p>Are you sure you want to delete this product?</p>
+            <h1>Delete Customer</h1>
+            <p>Are you sure you want to delete this customer?</p>
             <button type="button" onClick={handleDeletion}>Delete</button>
             <button type="button" onClick={handleCancel}>Cancel</button>
         </div>
     );
 };
 
-export default ProductDeletePage;
+export default CustomerDeletePage;

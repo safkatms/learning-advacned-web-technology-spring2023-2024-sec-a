@@ -12,7 +12,7 @@ const DashboardPage = () => {
             <Link href="/product">Product</Link>
           </li>
           <li>
-          <Link href="#">Customer</Link>
+          <Link href="/customer">Customer</Link>
           </li>
         </ul>
       </div>
